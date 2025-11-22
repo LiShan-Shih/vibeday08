@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>愛犬年齡換算器</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>愛犬年齡換算器</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>愛犬年齡換算器</h1>
-    <form id="dogForm">
-      <label for="dogName">愛犬名字：</label>
-      <input type="text" id="dogName" name="dogName" placeholder="輸入名字" required>
+    <div class="container">
+        <h1>🐶 愛犬年齡換算器</h1>
 
-      <label for="birthDate">出生日期：</label>
-      <input type="date" id="birthDate" name="birthDate" required>
+        <div class="input-group">
+            <label for="dogName">愛犬名字：</label>
+            <input type="text" id="dogName" placeholder="請輸入名字" />
+        </div>
 
-      <button type="button" id="convertBtn">轉換</button>
-    </form>
+        <div class="input-group">
+            <label for="birthDate">愛犬出生日期：</label>
+            <input type="date" id="birthDate" />
+        </div>
 
-    <div id="result" class="result">
-      <!-- 計算結果顯示在這裡 -->
+        <button id="convertBtn">轉換</button>
+
+        <div id="result" class="result"></div>
+
+        <h2>📜 歷史紀錄（最近 5 筆）</h2>
+        <ul id="historyList" class="history-list"></ul>
     </div>
 
-    <div class="reference">
-      <h2>參考文獻</h2>
-      <p>根據 American Kennel Club 提供的換算說明：「第一年約等於 15 人類年，第二年約 9 人類年，之後每年約 5 人類年」。</p>
-      <p>另有 National Institutes of Health 指出：「1 人類年 ≠ 7 狗年」是常見迷思，其換算為非線性關係。</p>
-    </div>
-  </div>
-  <script src="lib.js"></script>
+    <script src="lib.js"></script>
 </body>
 </html>
